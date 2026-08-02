@@ -5,17 +5,17 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link src="style\style.css">
-  <link scr="style\fonts.css">
-  <link scr="style\global.css">
+  <link src="style.css">
+  <link scr="fonts\fonts.css">
   <title>Оно тебе надо</title>
 
 </head>
 
 <body>
 
-  <header>
+  <header class="content_links">
     <nav class="menu">
       <ul class="menu__list">
         <li class="menu__item"><a href="home>">Главная</a></li>
@@ -39,9 +39,9 @@
     </address>
   </header>
 
-  <main class="main">
+  <main class="main_content_section">
 
-    <section class="cover">
+    <section class="main_content_section_cover">
       <h1 class="main_title">Оно тебе надо</h1>
       <div class="description">
         <p>Аукцион вещей, в которые никто не верил</p>
@@ -50,7 +50,7 @@
     </section>
 
 
-    <section class="lots">
+    <section class="main_content_section_lots">
       <h2>Лоты</h2>
       <ul>
         <li class="lot-card">
@@ -102,51 +102,54 @@
 
   <footer>
 
-    <address class="contacts">
-      <a href="tel:+99995555555">+9 999 555 5555</a>
+    <section class="content_links">
+
+      <address class="content_links_contacts">
+        <a href="tel:+99995555555">+9 999 555 5555</a>
+        </a>
+        <a  href="email:info@sobaka.ge"> info@sobaka.ge
+        </a>
+        <a href="location:наб. Принсенграхт 263-265, Амстердам">наб. Принсенграхт 263-265, Амстердам
+        </a>
+      </address>
+
+
+      <nav class="content_links_menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="home>">Главная</a></li>
+          <li class="menu__item_active"><a href="#lots">Посмотреть лоты</a></li>
+          <li class="menu__item_active"><a href="#about">Об аукционе</a></li>
+        </ul>
+      </nav>
+
+
+      <a class="content_links_logo">
+        <img  src="img/Vector.svg" alt="Логотип компании">
       </a>
-      <a  href="email:info@sobaka.ge"> info@sobaka.ge
-      </a>
-      <a href="location:наб. Принсенграхт 263-265, Амстердам">наб. Принсенграхт 263-265, Амстердам
-      </a>
-    </address>
-
-
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item"><a href="home>">Главная</a></li>
-        <li class="menu__item_active"><a href="#lots">Посмотреть лоты</a></li>
-        <li class="menu__item_active"><a href="#about">Об аукционе</a></li>
-      </ul>
-    </nav>
-
-
-   <a class="logo">
-      <img  src="img/Vector.svg" alt="Логотип компании">
-   </a>
 
     
 
-    <div class="soсial_links">
-      <ul class="soсial_links_list">
-        <li class="soсial_links_list_youtube">
-          <a href="#0">
-            <img src="img\YouTube.svg">
-          </a>
-        </li>
-        <li class="soсial_links_list_vk">
-          <a href="#0">
+      <div class="content_links_soсial_links">
+        <ul class="soсial_links_list">
+          <li class="soсial_links_list_youtube">
+            <a href="#0">
+              <img src="img\YouTube.svg">
+            </a>
+          </li>
+          <li class="soсial_links_list_vk">
+            <a href="#0">
             <img src="img\VK.svg">
-          </a>
-        </li>
-        <li class="soсial_links_list_pinterest">
-          <a href="#0">
-            <img src="img\Pinterest.svg">
-          </a>
-        </li>
-      </ul>
+            </a>
+          </li>
+          <li class="soсial_links_list_pinterest">
+            <a href="#0">
+              <img src="img\Pinterest.svg">
+            </a>
+          </li>
+        </ul>
       
-    </div>
+      </div>
+    </section>
   </footer>
 
 </body>
