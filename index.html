@@ -2,17 +2,95 @@
 
 <html lang="ru">
 
- <head>
-   <link src="style\style.css">
-   <link scr="style\fonts.css">
-   <link scr="style\global.css">
-   <title></title>
- </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link src="style\style.css">
+  <link scr="style\fonts.css">
+  <link scr="style\global.css">
+  <title>Оно тебе надо</title>
+
+</head>
 
 <body>
 
   <header>
-    <nav>
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item"><a href="home>">Главная</a></li>
+        <li class="menu__item_active"><a href="#lots">Посмотреть лоты</a></li>
+        <li class="menu__item_active"><a href="#about">Об аукционе</a></li>
+      </ul>
+    </nav>
+
+    <a class="logo">
+
+    <img src="img/Vector.svg" alt="Логотип компании">
+    </a>
+
+    <address class="contacts">
+    </address>
+  </header>
+
+  <main class="main">
+
+    <section class="cover">
+      <h1 class="main_title">Оно тебе надо</h1>
+      <div class="description">
+        <p>Аукцион вещей, в которые никто не верил</p>
+        <button>Сделать ставку</button>
+      </div>
+    </section>
+
+
+    <section class="lots">
+      <h2>Лоты</h2>
+      <ul>
+        <li class="lot-card">
+          <article class="lot-card-film">
+            <a class="title_cards" href="#0">Фильм режиссёра, который бросил киношколу</a>
+              <p class="text_cards">Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+              </p>
+          </article>
+        </li>
+        <li class="lot-card">
+          <article class="lot-card-book">
+            <a class="title_cards" href="#0">Книга, где описан один скучный день из жизни рекламного агента</a>
+            </a>
+            <p class="text_cards">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+            </p>
+          </article>
+        </li>
+        <li class="lot-card">
+          <article class="lot-card-picture">
+            <a class="title_cards" href="#0">Картина, которую повторит даже 5-летний сын маминой подруги</a>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+
+    <div class="about">
+      <section class="logo"></section>
+      <div>
+        <h2>
+
+        </h2>
+        <p>
+
+        </p>
+        <p>
+
+        </p>
+      </div>
+      
+    </div>
+  
+  </main>
+
+  <footer>
+     <nav>
     </nav>
 
     <a>
@@ -20,33 +98,15 @@
 
     <address>
     </address>
-  </header>
 
-  <main class="main">
-
-    <section class="cover">
-      <h1></h1>
-      <div class="description">
-        <p></p>
-        <button></button>
-      </div>
-    </section>
-
-    <lot>
-      <h2></h2>
-      <ul>
-        <li><a><article></article></a></li>
-        <li><a><article></article></a></li>
-        <li><a><article></article></a></li>
+    <div class="sotial_links">
+      <ul class="sotial_links_list">
+        <li class="sotial_links_list_youtube"><a href="#0"></a></li>
+        <li class="sotial_links_list_vk"><a href="#0"></a></li>
+        <li class="sotial_links_list_pinterest"><a href="#0"></a></li>
       </ul>
-    </lot>
-
-    <about>
-    </about>
-  
-  </main>
-
-  <footer>
+      
+    </div>
   </footer>
 
 </body>
