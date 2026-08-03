@@ -10,10 +10,14 @@ p {
 }
 
 a {
+  display: block;
   color: black;
   font-style: normal;
+  text-decoration: underline;
+  text-decoration-thickness:1px;
+  text-underline-offset:4px;
+  text-decoration-skip-ink: auto;
 }
-
 
 img {
    max-width: 100%; 
@@ -21,8 +25,5 @@ img {
    }
 
 
-.content_links,
-.main_content {
-  box-sizing: border-box;
-  min-height: 100px;
-}
+
+

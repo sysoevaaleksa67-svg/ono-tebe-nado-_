@@ -5,38 +5,39 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="styles\style.css">
-  <link rel="stylesheet" href="fonts\fonts.css">
-  <link rel="stylesheet" href="styles\global.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="styles/global.css">
   <title>Оно тебе надо</title>
 
 </head>
 
 <body>
 
-  <header class="content_links">
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item"><a href="home>">Главная</a></li>
-        <li class="menu__item_active"><a href="#lots">Посмотреть лоты</a></li>
-        <li class="menu__item_active"><a href="#about">Об аукционе</a></li>
+  <header class="header_content_links">
+    <nav class="header_menu">
+      <ul class="header__links-list">
+        <li class="header__links-list-item_no-bullit"><a class="header__links-list-item_active" href="home">Главная</a></li>
+        <li class="header__links-list__item__lots"><a class="header__link" href="#lots__heading">Посмотреть лоты</a></li>
+        <li class="header__links-list__item__about"><a class="header__link" href="#about">Об аукционе</a></li>
       </ul>
     </nav>
 
-    <a class="logo">
-
-      <img  src="img/Vector.svg" alt="Логотип компании">
+    <a class="header_logo">
+      <img class="header__logo-image" src="images/logo.svg" alt="Логотип компании">
+    </a>
     
 
-    <address class="contacts">
-      <a href="tel:+99995555555">+9 999 555 5555</a>
-      </a>
-      <a  href="email:info@sobaka.ge"> info@sobaka.ge
-      </a>
-      <a href="location:наб. Принсенграхт 263-265, Амстердам">наб. Принсенграхт 263-265, Амстердам
-      </a>
+    <address class="header__address">
+      <div class="address">
+        <a href="tel:+99995555555">+9 999 555 5555
+        </a>
+        <a  href="mailto:info@sobaka.ge"> info@sobaka.ge
+        </a>
+        <span>наб. Принсенграхт 263–265, Амстердам</span>
+      </div>
     </address>
   </header>
 
@@ -48,19 +49,19 @@
         <p>Аукцион вещей, в которые никто не верил</p>
         <button>Сделать ставку</button>
         <a class="img_cover">
-          <img src="img\cover.jpg">
+          <img src="images/cover.jpg" alt="Изображение главной страницы:холст картины">
         </a>
       </div>
     </section>
 
 
     <section class="main_content_section_lots">
-      <h2>Лоты</h2>
+      <h2 id="lots__heading">Лоты</h2>
       <ul>
         <li class="lot-card">
           <article class="lot-card-film">
             <a class="lot-card-img_film">
-              <img src="img\card-lot-01.jpg">
+              <img src="images/card-lot-01.jpg" alt="Изображение первого лота:кадр из фильма">
             </a>
             <a class="title_cards" href="#0"><h3>Фильм режиссёра, который бросил киношколу
             </h3></a>
@@ -71,9 +72,9 @@
         <li class="lot-card">
           <article class="lot-card-book">
             <a class="lot-card-img_book">
-              <img src="img\card-lot-02.jpg">
+              <img src="images/card-lot-02.jpg" alt="Изображение второго лота:обложка книги">
             </a>
-            <a class="title_cards" href="#0"><h3>Книга, где описан один скучный день из жизни рекламного агента</a>
+            <a class="title_cards" href="#0"><h3>Книга, где описан один скучный день из жизни рекламного агента
             </h3></a>
             <p class="lot-card_content">Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
             </p>
@@ -82,7 +83,7 @@
         <li class="lot-card">
           <article class="lot-card-picture">
             <a class="lot-card-img_picture">
-              <img src="img\card-lot-03.jpg">
+              <img src="images/card-lot-03.jpg" alt="Изображение третьего лота:картина">
             </a>
             <a class="title_cards" href="#0"><h3>Картина, которую повторит даже 5-летний сын маминой подруги
             </h3></a>
@@ -95,11 +96,11 @@
 
 
     <div class="main_content_about">
-      <section class="logo">
+      
         <a class="logo_about">
-          <img src="img\logo.svg">
+          <img src="images/logo.svg" alt="Логотип компании: оно тебе надо">
         </a>
-      </section>
+      
 
         <div class="about_auction">
           <h2>Об аукционе
@@ -114,17 +115,15 @@
   
   </main>
 
-  <footer>
+  <footer class="footer_content_links">
 
-    <section class="content_links">
-
-      <address class="content_links_contacts">
+    
+      <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555
         </a>
         <a  href="email:info@sobaka.ge"> info@sobaka.ge
         </a>
-        <a href="location:наб. Принсенграхт 263-265, Амстердам">наб. Принсенграхт 263-265, Амстердам
-        </a>
+        <span>наб. Принсенграхт 263–265, Амстердам</span>
       </address>
 
 
@@ -135,35 +134,28 @@
           <li class="menu__item_active"><a href="#about">Об аукционе</a></li>
         </ul>
       </nav>
-
-
-      <a class="content_links_logo">
-        <img  src="img/Vector.svg" alt="Логотип компании">
-      </a>
-
     
-
       <div class="content_links_soсial_links">
         <ul class="soсial_links_list">
           <li class="soсial_links_list_youtube">
             <a href="#0">
-              <img src="img\YouTube.svg">
+              <img src="images/YouTube.svg" alt="Логотип c ссылкой на Youtube ">
             </a>
           </li>
           <li class="soсial_links_list_vk">
             <a href="#0">
-            <img src="img\VK.svg">
+            <img src="images/VK.svg" alt="Логотип c ссылкой на Вконтакте">
             </a>
           </li>
           <li class="soсial_links_list_pinterest">
             <a href="#0">
-              <img src="img\Pinterest.svg">
+              <img src="images/Pinterest.svg" alt="Логотип c ссылкой на Пинтерест">
             </a>
           </li>
         </ul>
       
       </div>
-    </section>
+    
   </footer>
 
 </body>
