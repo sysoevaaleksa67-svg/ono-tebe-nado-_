@@ -8,10 +8,7 @@ body {
   text-decoration: none;
 }
 
-.content {
-  max-width: 1100px;  
-  box-sizing: border-box;
-}
+
 
 .header_content_links { 
   display: grid;
@@ -87,8 +84,7 @@ body {
 }
 
 .aligned-text_left {
-display: block;.
-text-align:left;
+display: block;
 }
 
 .aligned-text_center {
