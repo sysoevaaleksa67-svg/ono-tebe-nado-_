@@ -14,8 +14,6 @@ body {
 }
 
 .header_content_links { 
-  
-  min-height: 100px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items:center;
@@ -38,11 +36,11 @@ body {
 
 .header__links-list { 
   display:flex;
-  justify-content:space-evenly;
+  gap:32px;
   list-style-type: circle;
   white-space: nowrap;
   text-transform:lowercase;
-  line-height: 100%;
+ 
   
   
 }
@@ -218,6 +216,7 @@ color: #ffffff;
 }
 
 .card__title {
+  margin:0;
   font-size: 22px;
   text-decoration: underline;
   text-transform: uppercase;
@@ -232,6 +231,7 @@ color: #ffffff;
   font-size: 20px;
   text-transform: lowercase;
   padding-top: 30px;
+  padding-left: 40px;
   color: black;
 }
 
@@ -254,7 +254,9 @@ color: #ffffff;
   justify-content: center;
   align-items: center;
   justify-self: center;
-  align-self: self-start;
+  margin-top: 35px;
+  margin-right: 20px;  /*выравнивание логотипа по pixelperfect*/
+  
 
 }
 .about__logo-image {}
@@ -275,28 +277,28 @@ color: #ffffff;
 
   .footer_content_links {
     display: grid;
-    grid-template-columns: 265px  164px 240px;
+    grid-template-columns: 265px  164px 300px;
     grid-template-rows:auto;
     gap:154px;
     padding-left:50px;
-    padding-right: 50px;
-    padding-bottom: 82px;
-    
-   
+    letter-spacing: 1px;
   }
 
   .address {
   line-height: 1.3;
   font-style: normal;
   max-width: 260px;
- 
+  line-height: 24px;
   }
   
-  .footer__social-list {
+ 
    
+ .footer__menu {
+  line-height: 21px;
+ }
 
 
-  }
+  
   .footer__menu-list {
   list-style-type: circle;
   text-transform:lowercase;
@@ -316,4 +318,8 @@ color: #ffffff;
  }
  .footer__menu-list-item_no-bullit {
   list-style-type:none;
+ }
+
+ .footer__social-list {
+  margin-left: 20px;
  }
