@@ -8,7 +8,10 @@ body {
   text-decoration: none;
 }
 
-
+.content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
 
 .header_content_links { 
   display: grid;
@@ -62,15 +65,22 @@ body {
   position: absolute;
   inset:0;
   background-image: url(/images/overlay.png);
- }
+  z-index: 0;
+}
 
 .main_title {
-  height: 385px;
-  font-weight: 700px;
+  
   font-size: 100px;
   letter-spacing:28px;
   text-transform:uppercase;
-  padding: 165px 50px 106px;
+  z-index: 1;
+  padding: 165px 50px 140px;
+}
+
+.aligned-text_left,
+.aligned-text_center,
+.aligned-text_right {
+  position: relative;
 }
 
 .aligned-text_left {
@@ -78,33 +88,28 @@ display: block;
 }
 
 .aligned-text_center {
-position: relative;  /*при попытке задать родителю это свойство , браузер не видел изменений*/
-top: 21px; /*работа с PerfectPixel*/
-left:14px;
 display: block;
 text-align:center;
+top: 17px; 
+left:14px;
 }
 
 .aligned-text_right {
-  position: relative;
-  top: 36px;
-  left:23px;
   display: block;
   text-align:right;
+  top:35px;
+  left:26px;
 }
 
 .cover__description {
   display: flex;
   align-items:center;        
   justify-content: space-between;
-  gap: 20px;
   font-size:22px;
   word-spacing: 18px;
   text-transform:uppercase;
   padding-left: 50px;
-  padding-bottom: 61px;
   padding-right: 50px;
-  margin-top: 3px;/*подгоняла изображение под макет*/
 }
 
 .bet-button {
@@ -115,6 +120,8 @@ text-align:center;
   color:white;
   text-transform:uppercase;
   border: 2px solid #ffffff;
+  z-index: 1;
+ 
 }
 
 .lots {
